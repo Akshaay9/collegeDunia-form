@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>College Dunia Form</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="loginContainer">
+      <div class="inputField">
+        <label for="name">Name : </label>
+        <input
+          type="text"
+          id="name"
+          class="input-sm"
+          style="margin-left: 65px"
+        />
+      </div>
+      <div class="inputField">
+        <label for="mobileNum">Mobile No : </label>
+        <input
+          type="text"
+          id="mobileNum"
+          class="input-sm"
+          style="margin-left: 34px"
+        />
+      </div>
+      <div class="inputField">
+        <label for="address">Address : </label>
+        <textarea
+          name=""
+          id="address"
+          cols="30"
+          rows="10"
+          class="textalrea-sm"
+          style="margin-left: 50px"
+        ></textarea>
+      </div>
+      <div class="inputField">
+        <label for="qualification">Qualification : </label>
+        <textarea
+          name=""
+          id="qualification"
+          cols="30"
+          rows="10"
+          class="textalrea-sm"
+          style="margin-left: 21px"
+        ></textarea>
+      </div>
+      <div class="inputField">
+        <label for="courseChoosen">Course Choosen : </label>
+        <select name="" id="courseChoosen" class="select-ls">
+          <option value="Select Course" disabled selected>Select Course</option>
+          <option value="Best Computer Science Course After 12th">
+            Best Computer Science Course After 12th
+          </option>
+          <option value="Best Computer Science Course After 12th Science">
+            Best Computer Science Course After 12th Science
+          </option>
+          <option value="Best Computer Science Course After 12th Commerce">
+            Best Computer Science Course After 12th Commerce
+          </option>
+          <option value="Best Computer Science Course After 12th Arts">
+            Best Computer Science Course After 12th Arts
+          </option>
+          <option value="3 month Computer course after 12th">
+            3 month Computer course after 12th
+          </option>
+          <option value="6 month Computer course after 12th">
+            3 month Computer course after 12th
+          </option>
+          <option value="NIIIT Computer course after 12th">
+            NIIIT Computer course after 12th
+          </option>
+        </select>
+      </div>
+
+      <div class="inputField-radio">
+        <label for="courseDuration">Course Duration: </label>
+        <div style="margin-left: 20px">
+          <div>
+            <input
+              type="radio"
+              name="courseDuration"
+              id="courseChoosen-6-months"
+              class="input-radio"
+              value="6 months"
+            />
+            <label for="courseChoosen-6-months">6 months</label>
+          </div>
+          <div>
+            <input
+              type="radio"
+              name="courseDuration"
+              id="courseChoosen-1-year"
+              class="input-radio"
+              value="1 year"
+            />
+            <label for="courseChoosen-1-year">1 year</label>
+          </div>
+          <div>
+            <input
+              type="radio"
+              name="courseDuration"
+              id="courseChoosen-2-year"
+              class="input-radio"
+              value="2 year"
+            />
+            <label for="courseChoosen-2-year">2 year</label>
+          </div>
+
+          <div>
+            <input
+              type="radio"
+              name="courseDuration"
+              id="courseChoosen-3-year"
+              class="input-radio"
+              value="3 year"
+            />
+            <label for="courseChoosen-3-year">3 year</label>
+          </div>
+        </div>
+      </div>
+      <div class="inputField">
+        <label for="name">Fees : </label>
+        <select name="" id="fee" class="select-ls" style="margin-left: 90px">
+          <option value="select filed" selected fees>select Course fees</option>
+          <option value="1,00,000">1,00,000</option>
+          <option value="2,00,000">2,00,000</option>
+          <option value="3,00,000">3,00,000</option>
+          <option value="4,00,000">4,00,000</option>
+          <option value="5,00,000">5,00,000</option>
+        </select>
+      </div>
+      <div class="inputField">
+        <label for="startDate">Tentative Start Date : </label>
+        <input
+          type="date"
+          name="startDate"
+          id="startDate"
+          style="margin-left: 11px"
+        />
+      </div>
+
+      <div class="inputField">
+        <label for="paymentOption">Payment Option : </label>
+        <div>
+          <div>
+            <input
+              type="radio"
+              name="paymentOption"
+              id="debitCard"
+              class="input-radio"
+              value="Debit Card"
+              style="margin-top: 10px"
+            />
+            <label for="debitCard">Debit Card</label>
+          </div>
+          <div>
+            <input
+              type="radio"
+              name="paymentOption"
+              id="creditCard"
+              class="input-radio"
+              value="Credit Card"
+            />
+            <label for="creditCard">Credit Card</label>
+          </div>
+          <div>
+            <input
+              type="radio"
+              name="paymentOption"
+              id="upi"
+              class="input-radio"
+              value="upi/paytm/phonepe/googlepe"
+            />
+            <label for="upi">upi/paytm/phonepe/googlepe</label>
+          </div>
+          <div>
+            <input
+              type="radio"
+              name="paymentOption"
+              id="cashPayment"
+              class="input-radio"
+              value="CashPayment"
+            />
+            <label for="cashPayment">CashPayment</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="loginBtnRowTwo">
+        <button id="submitForm" class="button">Sumbit</button>
+
+        <button id="clearnForm" class="button">Clear</button>
+      </div>
+    </div>
+    <script src="./form.js"></script>
+  </body>
+</html>
